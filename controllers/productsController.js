@@ -9,6 +9,7 @@ const getProducts = (req, res) => {
 // @route POST /api/products
 // @access public
 const createProducts = (req, res) => {
+  console.log("the request body:", req.body)
   res.status(201).json({message: "Create new product"});
 }
 
